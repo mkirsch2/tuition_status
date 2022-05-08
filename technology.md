@@ -16,8 +16,8 @@
 
 
 ## Cleaning and Analysis
-### Jupyter Notebook
-- Read in CSV file and performed exploratory data analysis
+### Jupyter Notebook and Pandas
+- Read in CSV file and performed exploratory data analysis using Pandas
 - Viewed samples of the data using df.head() and df.tail()
 - Dropped null values using df.dropna()
 - Identified the data types using df.dtypes()
@@ -33,7 +33,16 @@
 - Split X and Y into training and testing sets
 - Instantiated and trained a logistic regression model
 - Validated the logisitic regression model
-- Assessed the performance using the accuracy score
+- Assessed the performance
+
+- Read in CSV file with cleaned data
+- Determined the independent (Y) and dependent (X) variables
+- -Split X and Y into training and testing sets and scaled the data
+- Fit the model
+- Assessed the performance
+- Rank factor importance
+- Re-ran the model
+
 
 ## Dashboard
 ### Tableau

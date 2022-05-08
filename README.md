@@ -42,7 +42,7 @@ This analysis deals with classificiation - whether or not a student will default
 
 Instead, a random forest model was implemented, as this type of model is powerful against overfitting. After running the first model, the nine factors were ranked by importance and the top four factors were selected and input back into the model.
 
-<img src="https://github.com/mkirsch2/tuition_status/blob/main/images/phase_1.png" width="700" height="400" />
+<img src="https://github.com/mkirsch2/tuition_status/blob/main/images/phase_1.png" width="525" height="300" />
 
 ## Definitions
 The following are commonly used words or phrases used throughout the analysis.

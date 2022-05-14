@@ -40,7 +40,7 @@ Pgadmin was then used to create a database to house the data for this analysis. 
 
 Using Jupyter Notebook, the following dependencies were imported to EDA.ipynb to assist with the cleaning and analysis of the data in 
 
-<img src="https://github.com/mkirsch2/tuition_status/blob/main/images/dependencies.png" width="700" height="400" />
+<img src="https://github.com/mkirsch2/tuition_status/blob/main/images/dependencies.png"/>
 
 The combined CSV file (prepped_data.csv) was read in using Pandas and exploratory data analysis was completed - 
 

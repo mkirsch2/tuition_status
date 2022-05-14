@@ -2,23 +2,23 @@
 
 ## Background
 
-In New York City there is a small but mighty post-secondary vocational school that is licensed by the the New York State Education Department (NYSED) Bureau of Proprietary School Supervision (BPSS), accredited by the Commission of the Council on Occupational Education (COE), and approved by both the United States Department of Education (USDE) and Department of Veteran Affairs (VA).
+In New York City there is a small post-secondary vocational school that is licensed by the the New York State Education Department (NYSED) Bureau of Proprietary School Supervision (BPSS), accredited by the Council on Occupational Education (COE), and approved by both the United States Department of Education (USDE) and Department of Veterans Affairs (VA).
 
 As the Director of Financial Aid Compliance & Veterans Affairs, part of my role is to oversee students' tuition plans and to identify trends in payment history. Being a school of this size, which graduates less than 150 of students per fiscal year, students who default on their tuition payments can drastically affect the financial performance of the school.
 
-The school, which has requested its name to remain anonymous for this analysis, offers two main programs that will be included within this analysis - a 150-hour part-time program and a 600-hour full-time program, both of which will be described in more detail later on in the analysis.
+The school, which has requested its name to remain anonymous for this analysis, offers two main programs that will be included within the analysis - a 150-hour part-time program and a 600-hour full-time program.
 
 ## Topic Selection
 
-This analysis will consider the following factors and determine if any have a significant influence on whether students default on their tuition payments.
+This analysis will consider the following factors and determine if any have a significant influence on whether students who have graduated will default on their tuition payments.
 
-- Gender
+- Program
 - Age
+- Gender
+- Previous post-secondary experience
 - Race / ethnicity
 - GED vs high school diploma
 - Years between completing GED / high school and starting a program at this school
-- Previous post-secondary experience (yes or no)
-- Full-time program (600 hours) vs part-time program (150 hours)
 - Final attendance percentage
 - Final GPA
 
@@ -38,21 +38,26 @@ Pgadmin was then used to create a database to house the data for this analysis. 
 
 ## Exploratory Data Analysis and Preliminary Feature Engineering
 
-Using Jupyter Notebook, the following dependencies were imported to EDA.ipynb to assist with the cleaning and analysis of the data in 
+Using Jupyter Notebook, the following dependencies were imported to EDA.ipynb to assist with the cleaning and analysis of the data:
 
 <img src="https://github.com/mkirsch2/tuition_status/blob/main/images/dependencies.png"/>
 
 The combined CSV file (prepped_data.csv) was read in using Pandas and exploratory data analysis was completed - 
 
 - Viewed samples of the data using df.head() and df.tail()
-- Dropped null values using df.dropna()
+- Identified and dropped null values using df.dropna()
 - Identified the data types using df.dtypes()
-- Reviewed descriptive statistics using df.describe()
 - Used Sklearn's LabelEncoder to transform objects into numeric values
 - Created two factors called years_between_education and age_at_grad<sup>1</sup>
 - Used np.timedelta64 to convert the new variables to years
-- Dropped unneeded columns - hs_ged_grad_date, grad_date, date_of_birth, hours_attended, hours_scheduled<sup>2</sup>
-- Exported the cleaned data to a new CSV
+- Dropped unneeded columns - grad_date, hs_ged_grad_date, date_of_birth, hours_attended, hours_scheduled<sup>2</sup>
+- Reviewed descriptive statistics using df.describe()
+- Created a box plot for years_between_education, age_at_grad, and gpa to view outliers
+- Determined that the outliers for gpa were errors in the original data, due to 70 being the minimum GPA for students to graduate
+- Removed the four rows with gpa outliers from the dataframe
+- Reviewed descriptive statistics again using df.describe()
+- Confirmed the total number of rows and columns using df.shape
+- Exported the cleaned data to a new cleaned_data.csv
 
 <sup>1</sup> years_between_education was engineered from two features that were in the original dataset - hs_ged_grad_date and grad_date - by calculating the difference in years between the two values. For this analysis, knowing the timeframe between students completing their secondary education and completing the full-time or part-time programs was desired, but the original data source did not have this information in the necessary format. Similarly, age_at_grad was calculated by subtracting the date_of_birth from grad_date to determine how old students were when they completed their programs.
 

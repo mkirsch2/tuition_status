@@ -1,11 +1,11 @@
 # Adding CSV files.
 age.CSV
-clean_data.CSV
 final_GPAs.CSV
 final_attendance.CSV
 student_summary_other_education.CSV
 previous_college.CSV
 age_gender_ethnicity.CSV
+default_status.CSV
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

@@ -32,16 +32,20 @@ The data has been extracted from the school's student information system (Diamon
 
 The nine factors were imput into a random forest model and then ranked by importance. The top four factors were then selected and input back into the model.
 
-<img src="https://github.com/mkirsch2/tuition_status/blob/main/images/model_1_imortance.png" width="525" height="300" />
+Random Forest Model #1
 
-<img src="https://github.com/mkirsch2/tuition_status/blob/main/images/model_2_imortance.png" width="525" height="300" />
+<img src="https://github.com/mkirsch2/tuition_status/blob/main/images/model_1_imortance.png" width="275" height="150" />
+
+Random Forest Model #2
+
+<img src="https://github.com/mkirsch2/tuition_status/blob/main/images/model_2_imortance.png" width="275" height="75" />
 
 ## Definitions of Factors
 
 - gpa: final grade point average at the completion of a student's program
 
 - attendance_percentage: total hours attended divided by total hours scheduled in a student's program
--
+
 - years_between_education: years between graduating high school (or receiving a GED) and completing a program at this school
 
 - age_at_grad: student's age as of the date they completed their program

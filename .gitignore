@@ -6,6 +6,8 @@ student_summary_other_education.CSV
 previous_college.CSV
 age_gender_ethnicity.CSV
 default_status.CSV
+default_status.CSV
+SQL_queries.txt
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

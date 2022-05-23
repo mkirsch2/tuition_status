@@ -2,7 +2,7 @@
 
 ## Preparation
 ### Quick DBD
-- Created a conceptual entity relationship diagram
+- Used to create a conceptual entity relationship diagram
 - Identified primary and foreign keys
 
 
@@ -46,4 +46,4 @@
 
 ## Dashboard
 ### Tableau
-- Will be used to create the dashboard of the final analysis.
+- 

@@ -30,6 +30,7 @@ The data has been extracted from the school's student information system (Diamon
 
 ## Analysis & Findings
 
+### Random Forest Models
 The nine factors were imput into a random forest model and then ranked by importance. The top four factors were then selected and input back into the model.
 
 Random Forest Model #1
@@ -39,6 +40,9 @@ Random Forest Model #1
 Random Forest Model #2
 
 <img src="https://github.com/mkirsch2/tuition_status/blob/main/images/model_2_imortance.png" width="275" height="75" />
+
+### Findings
+
 
 ## Definitions of Factors
 

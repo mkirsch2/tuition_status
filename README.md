@@ -24,7 +24,7 @@ This analysis considers the following factors and determines if any have a signi
 
 ## Source of the Data
 
-The datasets used for this project are directly from the school and are not publically available elsewhere. To ensure privacy of student information, personally identificable information (PII) has been removed from the dataset. This includes, but is not limited to, SSNs, names, and street addresses.
+The datasets used for this project are directly from the school and are not publically available elsewhere. To ensure privacy of student information, personally identificable information has been removed from the dataset. This includes, but is not limited to, SSNs, names, and street addresses.
 
 The data has been extracted from the school's student information system (Diamond SIS), and exported as several CSV files.
 
@@ -33,13 +33,34 @@ The data has been extracted from the school's student information system (Diamon
 ### Random Forest Models
 The nine factors were imput into a random forest model and then ranked by importance. The top four factors were then selected and input back into the model.
 
-Random Forest Model #1
+#### Random Forest Model #1
 
 <img src="https://github.com/mkirsch2/tuition_status/blob/main/images/model_1_imortance.png" width="275" height="150" />
 
-Random Forest Model #2
+#### Random Forest Model #2
 
 <img src="https://github.com/mkirsch2/tuition_status/blob/main/images/model_2_imortance.png" width="275" height="75" />
+
+#### Model Metrics
+
+Random Forest Model #2 was used for the remainder of this analysis. To assess its performance, the following statistics were reviewed.
+
+The overall accuracy of the model is 34%. However, as this dataset is imbalanced, having far less defaults than non defaults, this is not the best metric to assess the performance.
+
+The precision for a student who has defaulted is 18%. This means out of all the defaults predicted, only 18% are actually defaults (high number of false positives).
+
+The percentage of students who defaulted and were correctly predicted (recall) was 78%.
+
+Having low precision and much higher recall, the F-1 score of 0.29 was analyzed.
+
+Unfortunately, based on the model's metrics, this model does not appear to do well at predicting whether or not a completer student defaults on their tuition.
+
+NOTE:
+0 = not default
+1 = default
+
+<img src="https://github.com/mkirsch2/tuition_status/blob/main/images/model_2_metrics.png"/>
+
 
 ### Findings
 
@@ -49,27 +70,26 @@ Of the 407 student completers in this analysis, about 18% defaulted on their tui
 - Attendance percentage
 - Years between education
 
-<img src="https://github.com/mkirsch2/tuition_status/blob/main/images/default_vs_age_at_grad.png" width="275" height="75" />
+<img src="https://github.com/mkirsch2/tuition_status/blob/main/images/default_age_vs_years_btwn_education.png" width=50% height=50%/>
 
 The majority of defaults occur between ages 20 - 34. There may be several reasons for this:
 - The youngest range of students (17 - 19 years old) may have financial assistance from their parents
 - Students ages 35 - 64 may have more financial stability (for example, having a stable job and more experience managing their finances)
 - Students ages 20 - 34 may be early on in their careers and have less financial stability (for example, they may be earning or working less and have less experience with managing their finances)
 
+Most of the defaults occured for students with 0 - 14 years between completing high school or a GED program and completing a program at this school. This is fairly similar to the age of students who default.
 
-<img src="https://github.com/mkirsch2/tuition_status/blob/main/images/default_vs_gpa.png"/>
+
+<img src="https://github.com/mkirsch2/tuition_status/blob/main/images/default_vs_gpa.png" width=60% height=60%/>
 
 The majority of defaults occur for students with GPAs between 80 and 94%, with the least amount of defaults (4) occuring for students with GPAs between 95 - 99%.
 
-<img src="https://github.com/mkirsch2/tuition_status/blob/main/images/default_vs_attendance.png"/>
+
+<img src="https://github.com/mkirsch2/tuition_status/blob/main/images/default_vs_attendance.png" width=60% height=60%/>
 
 The majority of defaults occur for students with attendance falling in the 80 - 99% range. Surprisingly the lowest attendance range (75 - 79%) had zero defaults and 3 students with 100% attendance defaulted.
 
-<img src="https://github.com/mkirsch2/tuition_status/blob/main/images/default_vs_years_btwn_education.png"/>
-
-Most of the defaults occured for students with 0 - 14 years between completing high school or a GED program and completing a program at this school. This correlates  closely with the age of students who default, which can be seen below.
-
-<img src="https://github.com/mkirsch2/tuition_status/blob/main/images/default_age_vs_years_btwn_education.png"/>
+<img src="https://github.com/mkirsch2/tuition_status/blob/main/images/default_vs_years_btwn_education.png" width=60% height=60%/>
 
 
 ## Definitions of Factors and Common Terms

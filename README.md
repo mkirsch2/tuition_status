@@ -64,32 +64,32 @@ NOTE:
 
 ### Findings
 
+Although the model did not perform well, the following trends were identified during the analysis.
+
 Of the 407 student completers in this analysis, about 18% defaulted on their tuition. Based on the model, the top four factors that affect whether or not a student completer defaults on their tuition are:
 - Age at graduation
 - GPA
 - Attendance percentage
 - Years between education
 
-<img src="https://github.com/mkirsch2/tuition_status/blob/main/images/default_age_vs_years_btwn_education.png" width=50% height=50%/>
-
 The majority of defaults occur between ages 20 - 34. There may be several reasons for this:
 - The youngest range of students (17 - 19 years old) may have financial assistance from their parents
-- Students ages 35 - 64 may have more financial stability (for example, having a stable job and more experience managing their finances)
 - Students ages 20 - 34 may be early on in their careers and have less financial stability (for example, they may be earning or working less and have less experience with managing their finances)
+- Students ages 35 - 64 may have more financial stability (for example, having a stable job and more experience managing their finances)
 
 Most of the defaults occured for students with 0 - 14 years between completing high school or a GED program and completing a program at this school. This is fairly similar to the age of students who default.
 
+<img src="https://github.com/mkirsch2/tuition_status/blob/main/images/default_age_vs_years_btwn_education.png" width=50% height=50%/>
 
-<img src="https://github.com/mkirsch2/tuition_status/blob/main/images/default_vs_gpa.png" width=75% height=75%/>
 
 The majority of defaults occur for students with GPAs between 80 and 94%, with the least amount of defaults (4) occuring for students with GPAs between 95 - 99%.
 
+<img src="https://github.com/mkirsch2/tuition_status/blob/main/images/default_vs_gpa.png" width=75% height=75%/>
 
-<img src="https://github.com/mkirsch2/tuition_status/blob/main/images/default_vs_attendance.png" width=75% height=75%/>
 
 The majority of defaults occur for students with attendance falling in the 80 - 99% range. Surprisingly the lowest attendance range (75 - 79%) had zero defaults and 3 students with 100% attendance defaulted.
 
-<img src="https://github.com/mkirsch2/tuition_status/blob/main/images/default_vs_years_btwn_education.png" width=60% height=60%/>
+<img src="https://github.com/mkirsch2/tuition_status/blob/main/images/default_vs_attendance.png" width=75% height=75%/>
 
 
 ## Definitions of Factors and Common Terms

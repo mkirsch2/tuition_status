@@ -59,7 +59,7 @@ NOTE:
 0 = not default
 1 = default
 
-<img src="https://github.com/mkirsch2/tuition_status/blob/main/images/model_2_metrics.png"/>
+<img src="https://github.com/mkirsch2/tuition_status/blob/main/images/model_2_metrics.png" width=35% height=35%/>
 
 
 ### Findings
@@ -80,12 +80,12 @@ The majority of defaults occur between ages 20 - 34. There may be several reason
 Most of the defaults occured for students with 0 - 14 years between completing high school or a GED program and completing a program at this school. This is fairly similar to the age of students who default.
 
 
-<img src="https://github.com/mkirsch2/tuition_status/blob/main/images/default_vs_gpa.png" width=60% height=60%/>
+<img src="https://github.com/mkirsch2/tuition_status/blob/main/images/default_vs_gpa.png" width=75% height=75%/>
 
 The majority of defaults occur for students with GPAs between 80 and 94%, with the least amount of defaults (4) occuring for students with GPAs between 95 - 99%.
 
 
-<img src="https://github.com/mkirsch2/tuition_status/blob/main/images/default_vs_attendance.png" width=60% height=60%/>
+<img src="https://github.com/mkirsch2/tuition_status/blob/main/images/default_vs_attendance.png" width=75% height=75%/>
 
 The majority of defaults occur for students with attendance falling in the 80 - 99% range. Surprisingly the lowest attendance range (75 - 79%) had zero defaults and 3 students with 100% attendance defaulted.
 

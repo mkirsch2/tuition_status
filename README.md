@@ -10,7 +10,7 @@ The school, which has requested its name to remain anonymous, offers two main pr
 
 ## Topic Selection
 
-This analysis considers the following factors and determines if any have a significant influence on whether students who have graduated will default on their tuition payments:
+This analysis considers the following factors and determines if any have a significant influence on whether student completers will default on their tuition payments:
 
 - Program
 - Age
@@ -43,8 +43,36 @@ Random Forest Model #2
 
 ### Findings
 
+Of the 407 student completers in this analysis, about 18% defaulted on their tuition. Based on the model, the top four factors that affect whether or not a student completer defaults on their tuition are:
+- Age at graduation
+- GPA
+- Attendance percentage
+- Years between education
 
-## Definitions of Factors
+<img src="https://github.com/mkirsch2/tuition_status/blob/main/images/default_vs_age_at_grad.png" width="275" height="75" />
+
+The majority of defaults occur between ages 20 - 34. There may be several reasons for this:
+- The youngest range of students (17 - 19 years old) may have financial assistance from their parents
+- Students ages 35 - 64 may have more financial stability (for example, having a stable job and more experience managing their finances)
+- Students ages 20 - 34 may be early on in their careers and have less financial stability (for example, they may be earning or working less and have less experience with managing their finances)
+
+
+<img src="https://github.com/mkirsch2/tuition_status/blob/main/images/default_vs_gpa.png"/>
+
+The majority of defaults occur for students with GPAs between 80 and 94%, with the least amount of defaults (4) occuring for students with GPAs between 95 - 99%.
+
+<img src="https://github.com/mkirsch2/tuition_status/blob/main/images/default_vs_attendance.png"/>
+
+The majority of defaults occur for students with attendance falling in the 80 - 99% range. Surprisingly the lowest attendance range (75 - 79%) had zero defaults and 3 students with 100% attendance defaulted.
+
+<img src="https://github.com/mkirsch2/tuition_status/blob/main/images/default_vs_years_btwn_education.png"/>
+
+Most of the defaults occured for students with 0 - 14 years between completing high school or a GED program and completing a program at this school. This correlates  closely with the age of students who default, which can be seen below.
+
+<img src="https://github.com/mkirsch2/tuition_status/blob/main/images/default_age_vs_years_btwn_education.png"/>
+
+
+## Definitions of Factors and Common Terms
 
 - gpa: final grade point average at the completion of a student's program
 
@@ -63,3 +91,5 @@ Random Forest Model #2
 - previous_college: any post-secondary education beyond high school (or earning a GED)
 
 - hs_ged: whether a student earned a high school diploma or a GED
+
+- completers: students who graduated from the 15-hour or 600-hour program at this school

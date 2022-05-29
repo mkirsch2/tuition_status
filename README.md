@@ -92,10 +92,10 @@ The majority of defaults occur for students with attendance falling in the 80 - 
 <img src="https://github.com/mkirsch2/tuition_status/blob/main/images/default_vs_attendance.png" width=75% height=75%/>
 
 ## Tableau Storyboard
-Link to Tableau Storyboard: [LINK](https://public.tableau.com/views/tuition_status/DefaultStory?:language=en-US&:display_count=n&:origin=viz_share_link "LINK")
+Link to Tableau Storyboard: [LINK](https://public.tableau.com/views/tuition_status/DefaultStory?:language=en-US&:display_count=n&:origin=viz_share_link) "LINK")
 
 ## Presentation
-Link to presentation: [LINK](https://docs.google.com/presentation/d/1sfQ9ouOJo9kxwcbOxgmkBcGsj84wSKudR4hSjP_7nos/edit?usp=sharing "LINK")
+Link to presentation: [LINK](https://docs.google.com/presentation/d/1sfQ9ouOJo9kxwcbOxgmkBcGsj84wSKudR4hSjP_7nos/edit?usp=sharing) "LINK")
 
 ## Definitions of Factors and Common Terms
 

@@ -30,20 +30,16 @@
 ### Jupyter Notebook
 - Read in CSV file with cleaned data
 - Determined the independent (Y) and dependent (X) variables
-- Split X and Y into training and testing sets
-- Instantiated and trained a logistic regression model
-- Validated the logisitic regression model
-- Assessed the performance
-
-- Read in CSV file with cleaned data
-- Determined the independent (Y) and dependent (X) variables
-- -Split X and Y into training and testing sets and scaled the data
+- Split X and Y into training and testing sets and scaled the data
 - Fit the model
 - Assessed the performance
-- Rank factor importance
+- Ranked factor importance
 - Re-ran the model
 
 
 ## Dashboard
 ### Tableau
-- 
+- Linked to database in Pgadmin
+- Created charts to visualize the sample student population and to identify trends in the data
+- Used charts to create a storyboard
+- Published to Tableau Public

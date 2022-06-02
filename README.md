@@ -91,8 +91,8 @@ The majority of defaults occur for students with attendance falling in the 80 - 
 
 <img src="https://github.com/mkirsch2/tuition_status/blob/main/images/default_vs_attendance.png" width=75% height=75%/>
 
-## Tableau Storyboard
-Link to Tableau Storyboard: [LINK](https://public.tableau.com/views/tuition_status/DefaultAnalysis?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link)
+## Tableau Dashboard
+Link to Tableau Dashboard: [LINK](https://public.tableau.com/views/tuition_status/DefaultAnalysis?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link)
 
 ## Presentation
 Link to presentation: [LINK](https://docs.google.com/presentation/d/1sfQ9ouOJo9kxwcbOxgmkBcGsj84wSKudR4hSjP_7nos/edit?usp=sharing)
@@ -118,3 +118,5 @@ Link to presentation: [LINK](https://docs.google.com/presentation/d/1sfQ9ouOJo9k
 - hs_ged: whether a student earned a high school diploma or a GED
 
 - completers: students who graduated from the 15-hour or 600-hour program at this school
+
+- default: students who have been sent to collections for non-payment; overall time to default may vary depending on student communication regarding payments
